@@ -1,8 +1,14 @@
 <?php
-
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\EventController;
 use App\Http\Controllers\Api\AttendeeController;
 use App\Http\Controllers\Api\BookingController;
+
+//test API
+
+Route::get('/test-api', function () {
+    return response()->json(['message' => 'API is working']);
+});
 
 // Events
 Route::apiResource('events', EventController::class);
