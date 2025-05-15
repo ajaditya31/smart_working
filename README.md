@@ -54,6 +54,9 @@ php artisan db:seed
 php artisan test
 
 
+take a pull and run
+
+php artisan migrate:refresh
 
 The following test cases are covered under BookingTest.php:
 
